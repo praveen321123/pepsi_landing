@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    background-color: bisque;
+}
+.nav .logo{
+    margin-left: 50px;
+    color: #FF3031;
+}
+.nav .navigation{
+    display: flex;
+    align-items: center;
+}
+.nav .navigation ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.nav .navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
