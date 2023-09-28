@@ -1,13 +1,22 @@
+/* Fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Pacifico&display=swap');
+
+/* Universal selection */
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+
+/* Navbar start */
 .nav{
     display: flex;
     justify-content:space-between;
     padding: 10px;
     background-color: bisque;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 .nav .logo{
     margin-left: 50px;
@@ -26,3 +35,51 @@
     text-decoration: none;
     color: black;
 }
+/* Navbar end */
+
+/* banner start */
+.banner{
+    background-image: url(./img/pepsi_banner_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #DAE0E2;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.banner .info{
+    margin-top: 70px;
+    position: relative;
+}
+.banner .info h2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.banner .info p{
+    font-family: 'Pacifico', cursive;
+    margin-left: 20px;
+}
+.banner .item{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    transition: all 0.3s ease 0s;
+}
+.banner .item:hover{
+    transform: scale(1.2);
+    transform:rotate(10deg);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+/* banner end */
