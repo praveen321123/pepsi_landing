@@ -1,6 +1,15 @@
 /* Fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Pacifico&display=swap');
 
+/* Scroll Bar Styles */
+::-webkit-scrollbar{
+    width: 9px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, rgb(255, 1, 136)60%);
+    border-radius: 6px;
+}
+
 /* Universal selection */
 *{
     margin: 0%;
@@ -13,7 +22,8 @@
     display: flex;
     justify-content:space-between;
     padding: 10px;
-    background-color: bisque;
+    background-color: #0A79DF;
+    border-radius: 0px 0px 5px 5px;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -33,7 +43,15 @@
 }
 .nav .navigation ul li a{
     text-decoration: none;
-    color: black;
+    font-family: 'Kanit', sans-serif;
+    color: #DAE0E2;
+    padding: 10px;
+}
+.nav .navigation ul li a:hover{
+    color: #E74292;
+    transition: all 0.3s ease 0s;
+    border-bottom: 5px solid #E74292;
+    border-radius: 5px;
 }
 /* Navbar end */
 
@@ -43,10 +61,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #DAE0E2;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
+    height: 700px;
+    width: 100%;
     position: relative;
 }
 .banner::before{
@@ -56,6 +74,10 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
+}
+.banner .banner-content{
+    display: flex;
+    justify-content: space-around;
 }
 .banner .info{
     margin-top: 70px;
@@ -70,16 +92,71 @@
     font-family: 'Pacifico', cursive;
     margin-left: 20px;
 }
+.banner .info h5{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.banner .info h5 .beer-drink{
+    font-size: 25px;
+    color: #E74292;
+}
+.banner .info .social{
+    color: #E74292;
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+.banner .info .social:hover{
+    transform: scale(1.1);
+    background-color: #FF3E4D;
+    color: #67E6DC;
+    transition: all 0.3s ease 0s;
+    border-radius: 30%;
+}
+.banner .info .buy-btn{
+    padding: 10px 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    background-color: #E74292;
+    border-radius: 5px;
+    color: #DAE0E2;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.banner .info .buy-btn a{
+    text-decoration: none;
+    color: #DAE0E2;
+}
+.banner .info .buy-btn:hover{
+    transform: scale(1.1);
+    background-color: #FF3E4D;
+    color: #67E6DC;
+    transition: all 0.3s ease 0s;
+}
 .banner .item{
     position: relative;
     top: 50px;
-    left: 20px;
+    left: 10px;
     transition: all 0.3s ease 0s;
 }
 .banner .item:hover{
-    transform: scale(1.2);
     transform:rotate(10deg);
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 /* banner end */
+
+/* footer start*/
+.footer{
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+.footer span{
+    color: #E74292;
+    font-family: 'Kanit', sans-serif;
+}
+/* footer end*/
+
